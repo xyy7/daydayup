@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/habit_name_text"
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:hint="your habit:"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_weight="0.25"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:hint="已完成天数:"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/habit_time_text"
+        android:layout_weight="0.25"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:hint="x天"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="10dp"/>
+
+
+</LinearLayout>

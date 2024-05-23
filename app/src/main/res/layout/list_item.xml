@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/fruit_image"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"/>-->
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/fruit_name"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_marginLeft="10dp"/>-->
+
+    <TextView
+        android:id="@+id/edit_text"
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:hint="your plan:"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="10dp"/>
+
+<!--    <Spinner-->
+<!--        android:id="@+id/choose_time"-->
+<!--        android:layout_weight="0.5"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:autofillHints="time"-->
+<!--        android:layout_height="wrap_content"/>-->
+    <TextView
+        android:id="@+id/time_bound"
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:hint="st-end:"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="10dp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_view"-->
+<!--        android:layout_weight="0.5"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:hint="c_days"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_marginLeft="10dp"/>-->
+    <Button
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_clock"
+        android:text="闹钟"/>
+
+
+</LinearLayout>

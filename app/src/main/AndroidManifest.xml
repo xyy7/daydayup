@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dayday">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DeleteActivity"></activity>
+
+        <receiver
+            android:name=".DakaBroadcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.dayday.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".EverydayUpdate"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".RankInfoActivity" />
+        <activity android:name=".ApplyInfoActivity" />
+        <activity android:name=".UserCircleInfoActivity" />
+        <activity android:name=".OperateActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".CircleActivity" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
